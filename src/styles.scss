@@ -1,11 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
-
+:root{
+    font-size: 16px;
+    --color-primary: #90b0ff;
+    --color-primary-dark: #6a90f4;
+    --color-bg-dark: #13192b;
+    --color-bg-xdark: #0a0f1e;
+    --color-bg-light: #fff;
+    --color-text-light: #dfe3ef;
+    --color-text-muted: #c8d3ee;
+    --color-border-muted: #eceff1;
+    --color-text-dark: #08082e;
+}
 
 *, *::before, *::after {
     box-sizing: border-box;
   }
   * {
     margin: 0;
+    outline: 1px solid red;
   }
   html, body {
     height: 100%;
@@ -26,4 +38,17 @@
   }
 
 
-body { font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { 
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
+
+    &::-webkit-scrollbar-track{
+        background: #1e1e24;
+    }
+
+    &::-webkit-scrollbar-thumb{
+        background: #6649b8;
+    }
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

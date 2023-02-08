@@ -1,0 +1,9 @@
+.container{
+    background-color: var(--color-bg-dark);
+    width: 100%;
+    min-height: 20rem;
+
+    display: grid;
+    place-items: center;
+    color: var(--color-text-light);
+}
